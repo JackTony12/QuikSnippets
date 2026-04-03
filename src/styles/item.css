@@ -1,0 +1,97 @@
+/* ── Prism theme (dark) ─────────────────────────────────────── */
+pre[class*="language-"], code[class*="language-"] {
+  background: none; color: #f8f8f2;
+  font-family: var(--font-code); font-size: 12.5px;
+  line-height: 1.7; tab-size: 2;
+  text-shadow: none; white-space: pre;
+}
+.token.comment, .token.prolog, .token.doctype, .token.cdata { color: #6272a4; }
+.token.punctuation  { color: #f8f8f2; }
+.token.property, .token.tag, .token.constant, .token.symbol, .token.deleted { color: #ff79c6; }
+.token.boolean, .token.number    { color: #bd93f9; }
+.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted { color: #f1fa8c; }
+.token.operator, .token.entity, .token.url { color: #f8f8f2; }
+.token.atrule, .token.attr-value, .token.function, .token.class-name { color: #50fa7b; }
+.token.keyword  { color: #ff79c6; }
+.token.regex, .token.important, .token.variable { color: #ffb86c; }
+
+/* ── Card ───────────────────────────────────────────────────── */
+.item {
+  background: #111;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: border-color 0.2s;
+  animation: fadeUp 0.25s ease both;
+}
+.item:hover { border-color: var(--border-hover); }
+
+/* ── Header ─────────────────────────────────────────────────── */
+.item__header { padding: 14px 16px; }
+.item__meta   { display: flex; align-items: center; gap: 7px; margin-bottom: 7px; flex-wrap: wrap; }
+.item__lang-badge {
+  border-radius: 4px; padding: 2px 7px;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.02em; flex-shrink: 0;
+}
+.item__date   { color: var(--text-ghost); font-size: 11px; }
+.item__info   { margin-bottom: 10px; }
+.item__title  {
+  color: #e8e8e8; font-size: 13.5px; font-weight: 600;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  margin-bottom: 3px;
+}
+.item__desc   {
+  color: var(--text-muted); font-size: 12px;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+/* ── Action buttons ─────────────────────────────────────────── */
+.item__actions { display: flex; gap: 2px; }
+.item__btn {
+  background: none; border: none;
+  color: #3a3a3a; padding: 5px 6px;
+  border-radius: var(--radius-sm);
+  display: flex; transition: background 0.15s, color 0.15s;
+}
+.item__btn:hover { background: var(--bg-elevated); color: #aaa; }
+.item__btn--danger:hover { background: var(--danger-bg); color: var(--danger); }
+.item__btn--copied { color: var(--success) !important; }
+.item__btn--expand svg {
+  transition: transform 0.2s;
+}
+.item__btn--expanded svg { transform: rotate(180deg); }
+
+/* ── Code block ─────────────────────────────────────────────── */
+.item__code {
+  border-top: 1px solid #161616;
+  background: #0c0c0c;
+  padding: 14px;
+  overflow-x: auto;
+  max-height: 380px;
+  overflow-y: auto;
+}
+.code-block {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  font-family: var(--font-code) !important;
+  font-size: 12.5px !important;
+  line-height: 1.7 !important;
+  overflow: visible !important;
+}
+
+/* ── Clickable info area ─────────────────────────────────────── */
+.item__info--clickable {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 4px 6px;
+  margin: -4px -6px;
+  transition: background 0.15s;
+}
+.item__info--clickable:hover {
+  background: #1a1a1a;
+}
+.item__info--clickable:hover .item__title {
+  color: #fff;
+}

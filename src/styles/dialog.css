@@ -1,0 +1,25 @@
+.dialog-overlay {
+  position: fixed; inset: 0; z-index: 999;
+  background: rgba(0,0,0,0.75);
+  display: flex; align-items: center; justify-content: center;
+  animation: fadeIn 0.15s ease;
+}
+.dialog {
+  background: var(--bg-elevated); border: 1px solid #2a2a2a;
+  border-radius: var(--radius-xl); padding: 24px 28px;
+  max-width: 360px; width: 90%;
+  animation: fadeUp 0.2s ease;
+}
+.dialog__icon-row {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 12px;
+}
+.dialog__icon {
+  width: 36px; height: 36px; flex-shrink: 0;
+  background: var(--danger-bg); border: 1px solid var(--danger-border);
+  border-radius: var(--radius-md); display: flex;
+  align-items: center; justify-content: center; color: var(--danger);
+}
+.dialog__title   { color: var(--text-primary); font-size: 14px; font-weight: 600; }
+.dialog__sub     { color: var(--text-muted); font-size: 12px; margin-top: 2px; }
+.dialog__message { color: var(--text-secondary); font-size: 13px; line-height: 1.6; margin-bottom: 20px; }
+.dialog__actions { display: flex; gap: 8px; justify-content: flex-end; }

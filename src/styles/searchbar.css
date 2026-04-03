@@ -1,0 +1,22 @@
+.searchbar {
+  flex: 1; position: relative; min-width: 0;
+}
+.searchbar__icon {
+  position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
+  color: var(--text-ghost); pointer-events: none;
+}
+.searchbar__input {
+  width: 100%; background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md); padding: 7px 32px;
+  color: var(--text-primary); font-size: 13px;
+  transition: border-color 0.15s;
+}
+.searchbar__input:focus { outline: none; border-color: var(--border-strong); }
+.searchbar__input::placeholder { color: var(--text-ghost); }
+.searchbar__clear {
+  position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+  background: none; border: none; color: var(--text-muted);
+  display: flex; padding: 2px; border-radius: 3px; transition: color 0.15s;
+}
+.searchbar__clear:hover { color: var(--text-secondary); }

@@ -1,6 +1,5 @@
 import { LANGUAGES, LANG_COLORS } from '../utils/constants.js'
 import '../styles/sidebar.css'
-
 export default function Sidebar({ langCounts, totalCount, activeFilter, onFilterChange }) {
   const usedLangs = LANGUAGES.filter(l => langCounts[l] > 0)
 
@@ -9,9 +8,7 @@ export default function Sidebar({ langCounts, totalCount, activeFilter, onFilter
       {/* Logo */}
       <div className="sidebar__logo">
         <div className="sidebar__logo-icon">
-          <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-            <path d="M3 5l-2 2.5L3 10M12 5l2 2.5L12 10M8.5 2.5l-2 10" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+          <img src="/QuikSnippetsIcon.png" alt="logo" />
         </div>
         <div>
           <p className="sidebar__app-name">QuikSnippets</p>

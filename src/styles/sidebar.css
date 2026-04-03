@@ -14,11 +14,11 @@
   border-bottom: 1px solid var(--border);
 }
 .sidebar__logo-icon {
-  width: 30px; height: 30px;
-  background: var(--text-primary);
-  border-radius: var(--radius-md);
-  display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0; color: var(--bg-base);
+  & img {
+    width: 34px;
+    object-fit: cover;
+  } 
+
 }
 .sidebar__app-name  { font-size: 14px; font-weight: 700; letter-spacing: -0.03em; }
 .sidebar__app-sub   { font-size: 10px; color: var(--text-ghost); margin-top: 1px; }

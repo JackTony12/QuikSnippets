@@ -2,6 +2,7 @@ export const LANGUAGES = [
   'JavaScript',
   'TypeScript',
   'HTML',
+  'React',
   'CSS',
   'Python',
   'C++',
@@ -14,6 +15,7 @@ export const LANGUAGES = [
 export const LANG_COLORS = {
   JavaScript: '#f7df1e',
   TypeScript: '#3178c6',
+  React: '#61dafb',
   HTML: '#e34c26',
   CSS: '#264de4',
   Python: '#3776ab',
@@ -28,6 +30,7 @@ export const PRISM_LANG_MAP = {
   JavaScript: 'javascript',
   TypeScript: 'typescript',
   HTML: 'html',
+  React: 'jsx',
   CSS: 'css',
   Python: 'python',
   'C++': 'cpp',

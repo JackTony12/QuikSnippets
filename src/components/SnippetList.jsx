@@ -27,10 +27,10 @@ const handleToggle = (id) => {
         </div>
         <p className="list-empty__title">{hasFilters ? 'No hay snippets' : 'Sin snippets aún'}</p>
         <p className="list-empty__sub">
-          {hasFilters ? 'Try adjusting your search or filters' : 'Save your first code snippet to get started'}
+          {hasFilters ? 'Intenta ajustar tu búsqueda o filtros' : 'Crea tu primer snippet para tenerlo siempre a mano'}
         </p>
         {hasFilters ? (
-          <button className="btn btn-secondary" onClick={onClearFilters}>Clear filters</button>
+          <button className="btn btn-secondary" onClick={onClearFilters}>Limpiar filtros</button>
         ) : (
           <button className="btn btn-primary" onClick={onNew}>
             <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
@@ -49,9 +49,7 @@ const handleToggle = (id) => {
         <span>{snippets.length} snippet{snippets.length !== 1 ? 's' : ''}{hasFilters && ' · filtrados'}</span>
         {hasFilters && (
           <button className="list__clear" onClick={onClearFilters}>
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <path d="M1 1l8 8M9 1L1 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-            </svg>
+            <svg width="10" height="10" fill="none" viewBox="0 0 10 10"><path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="m1 1 8 8m0-8L1 9"/></svg>
             Limpiar filtros
           </button>
         )}

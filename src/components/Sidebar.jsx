@@ -14,7 +14,7 @@ export default function Sidebar({ langCounts, totalCount, activeFilter, onFilter
           </svg>
         </div>
         <div>
-          <p className="sidebar__app-name">Snippets</p>
+          <p className="sidebar__app-name">QuikSnippets</p>
           <p className="sidebar__app-sub">Gestor de código</p>
         </div>
       </div>
